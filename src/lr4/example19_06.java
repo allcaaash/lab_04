@@ -15,6 +15,9 @@ public class example19_06 {
             System.out.print("\n");
         }
 
+        System.out.print("\n");
+        System.out.print("\n");
+
         int deletedHeight = (int) (Math.random() * height - 1);
         int deletedWidth = (int) (Math.random() * width - 1);
 
@@ -26,9 +29,12 @@ public class example19_06 {
                 for (int j = 0; j < width; j++) {
                     if (j != deletedWidth) {
                         newArr[indexI][indexJ] = array[i][j];
+                        System.out.print(newArr[indexI][indexJ]);
+                        System.out.print(" ");
                         indexJ++;
                     }
                 }
+                System.out.print("\n");
                 indexI++;
             }
         }
